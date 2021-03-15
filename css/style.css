@@ -230,7 +230,13 @@
   .description {
       padding: 15px;
   }
-     
+  
+  @media (min-width: 900px) {
+    .description {
+      padding: 15px 150px;
+    }
+  }
+
   .first {
       height: 220px;
       display: flex;
