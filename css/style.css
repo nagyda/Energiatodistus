@@ -248,6 +248,7 @@
   #offer {
       display: flex;
       background-color: #F5F9FF;
+      height: fit-content;
     }
 
     @media (max-width: 900px) {
