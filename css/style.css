@@ -315,7 +315,8 @@
   /* Footer */
 
   footer img {
-      height: auto;
+      height: 50px;
+      width: auto;
   }
 
   @media (max-width: 900px) {
@@ -354,7 +355,6 @@
   footer a {
       display: flex;
       height: 50px;
-      width: 15%;
   }
 
   footer #desktop {
