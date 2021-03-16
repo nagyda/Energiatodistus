@@ -146,7 +146,7 @@
 
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     body #hero-title {
       font-size: 70px;
     }
@@ -187,7 +187,7 @@
 
 @media (max-width: 1200px) {
   contact-details {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -294,7 +294,6 @@
        font-size: 28px;
        width: 100%;
        justify-content: center;
-       height: 10%;
      }
     }
     
