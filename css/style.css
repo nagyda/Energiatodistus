@@ -68,19 +68,14 @@
           font-size: 16px;
       }
 
-      #right {
-          display: none;
-      }
+     
   }
 
 
   #left {
-      padding-left: 100px;
+      padding-left: 50px;
   }
 
-  #right {
-      padding-right: 100px;
-  }
 
   header a {
       text-decoration: none;
@@ -132,7 +127,7 @@
     justify-content: center;
     margin: 0;
     background-color: #627FB0; 
-  margin-top: 60px;
+  margin-top: 50px;
   padding: 40px;
 }
   
@@ -368,4 +363,214 @@
   #footer-mobile {
       display: none;
   }
+}
+
+/*contact-us button */
+
+.open-button {
+  background-color: #92AE4A;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.8;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.open-button:hover:hover {
+  opacity: 0.75;
+  cursor: pointer;
+
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.elem-group {
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.elem-group input[type=email], .elem-group input[type=text], .elem-group textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+textarea {
+    height: 200px;
+}
+
+/* When the inputs get focus, do something */
+.elem-group input[type=email], .elem-group input[type=text], .elem-group textarea  {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.elem-group .btn {
+  background-color: #92AE4A;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  text-align: center;
+  align-items: center;
+}
+
+/* Add a red background color to the cancel button */
+.elem-group .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.elem-group .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .open-button {
+    background-color: #92AE4A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    opacity: 0.8;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  
+  .open-button:hover:hover {
+    opacity: 0.75;
+    cursor: pointer;
+
+  }
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  /* Add styles to the form container */
+  .elem-group {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Full-width input fields */
+  .elem-group input[type=email], .elem-group input[type=text], .elem-group textarea {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+
+  /* When the inputs get focus, do something */
+  .elem-group input[type=email], .elem-group input[type=text], .elem-group textarea  {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .elem-group .btn {
+    background-color: #92AE4A;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+ 
+  
+  /* Add some hover effects to buttons */
+  .elem-group .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
