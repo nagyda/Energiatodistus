@@ -55,9 +55,11 @@
           right: 0;
       }
       
-      #left {
+      #left, #right {
           display: none;
       }
+
+
 
       body #left-mobile, #right-mobile {
           font-size: 12px;
